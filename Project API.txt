@@ -1,0 +1,47 @@
+Project API
+
+// POST: Move a value to register 
+http://localhost:8080/api/aLang/moveValue
+
+body:
+
+{
+    "statement": "MV REG3,#1000"
+}
+
+// POST: Add a value to register
+http://localhost:8080/api/aLang/addValue
+
+body:
+
+{
+    "statement": "ADD REG1,600"
+}
+
+// POST: Execute a program with multiple statements
+http://localhost:8080/api/aLang/executeProgram
+
+body:
+
+{
+    "program": "MV REG1,#2000\n MV REG2,#3000\n ADD REG1,REG2,REG3\n ADD REG1,600\n SHOW REG"
+}
+
+// -------------------------------------------
+
+// GET: Show the contents of the registers
+http://localhost:8080/api/aLang/showReg
+
+body:
+
+{
+    "statement": "SHOW REG"
+}
+
+or for a required register
+
+body:
+
+{
+    "statement": "SHOW REG1"
+}
