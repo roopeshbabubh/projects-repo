@@ -92,3 +92,12 @@ This document provides information on the API endpoints for the spring-redis app
 
 5. **Get All ADD Statements:**
    - Send a GET request to the endpoint: `http://localhost:8080/api/aLang/addValueStatements`
+
+
+### Use CLI commands to operate in Docker:
+
+```bash
+docker-compose build
+docker-compose up
+docker-compose down
+```
