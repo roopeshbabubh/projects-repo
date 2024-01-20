@@ -1,4 +1,4 @@
-# spring-redis-app Readme
+# spring-redis-app
 
 This document provides information on the API endpoints for the spring-redis app. The API is designed to interact with a language (aLang: simple assembly Language) interpreter, allowing users to perform operations such as moving values to registers, adding registers, executing programs with multiple statements, retrieving contents of registers, and all the register adding statements.
 
